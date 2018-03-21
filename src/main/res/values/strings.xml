@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Hello Relative</string>
+    <string name="greeting_main_page">0</string>
+    <string name="toastMessage">Toast HeHe :)</string>
+    <string name="show_initial_value">0</string>
+</resources>
