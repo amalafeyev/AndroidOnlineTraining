@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HelloRelative extends AppCompatActivity {
+public class HelloRelativeActivity extends AppCompatActivity {
 
     private static final String TAG = "HelloRelativeActivity";
 
@@ -22,26 +22,25 @@ public class HelloRelative extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello_relative);
 
-        txvToastRltv = (TextView) findViewById(R.id.txvToastRltv);
-        btnToastRltv = (Button) findViewById(R.id.btnToastRltv);
-        btnCountRltv = (Button) findViewById(R.id.btnCountRltv);
+        txvToastRltv = findViewById(R.id.txvToastRltv);
+        btnToastRltv = findViewById(R.id.btnToastRltv);
+        btnCountRltv = findViewById(R.id.btnCountRltv);
         counter = 0;
         txvToastRltv.setText(String.valueOf(counter));
 
     }
 
     public void onClick(View view) {
-        if(view.getId() == btnCountRltv.getId()){
-            if(txvToastRltv != null) {
-                txvToastRltv.setText(String.valueOf(++counter));
-            }
+        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            ((View)txvToastRltv.getParent())
+                    .setBackgroundDrawable( getResources()
+                            .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941) );
+        } else {
+            ((View)txvToastRltv.getParent())
+                    .setBackground( getResources()
+                            .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941));
         }
-        else if(view.getId() == btnToastRltv.getId() || view.getId() == txvToastRltv.getId()){
-            ((View) txvToastRltv.getParent())
-                    .setBackground(getDrawable(
-                            toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941));
-            toogler = !toogler;
-        }
+        toogler = !toogler;
 
         Toast.makeText(this, "Punch!!!", Toast.LENGTH_SHORT).show();
     }

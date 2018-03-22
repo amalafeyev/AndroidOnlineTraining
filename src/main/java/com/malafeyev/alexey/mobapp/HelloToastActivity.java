@@ -7,9 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HelloToastClassActivity extends AppCompatActivity implements View.OnClickListener {
+public class HelloToastActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "HelloToastClassActivity";
+    private static final String TAG = "HelloToastActivity";
 
     private TextView txvToast = null;
     private Button btnToast = null;
@@ -20,7 +20,7 @@ public class HelloToastClassActivity extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hello_toast_class);
+        setContentView(R.layout.activity_hello_toast);
 
         txvToast = findViewById(R.id.txvToast);
         btnToast = findViewById(R.id.btnToast);

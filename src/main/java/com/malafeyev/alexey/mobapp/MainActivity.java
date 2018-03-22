@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void startHelloToastActivity(View view) {
-        Intent intentHelloToast = new Intent(getApplicationContext(), HelloToastClassActivity.class);
+        Intent intentHelloToast = new Intent(getApplicationContext(), HelloToastActivity.class);
         startActivity(intentHelloToast);
     }
 
     public void startHelloRelativeActivity(View view) {
-        Intent intentHelloRelative = new Intent(getApplicationContext(), HelloRelative.class);
+        Intent intentHelloRelative = new Intent(getApplicationContext(), HelloRelativeActivity.class);
         startActivity(intentHelloRelative);
     }
 }

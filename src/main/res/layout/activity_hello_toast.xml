@@ -7,7 +7,7 @@ android:layout_height="match_parent"
 android:padding="@dimen/activity_margin"
 android:background="@drawable/mvimg_20180310_170434"
 android:orientation="vertical"
-tools:context="com.malafeyev.alexey.mobapp.HelloToastClassActivity">
+tools:context="com.malafeyev.alexey.mobapp.HelloToastActivity">
 
 <Button
     android:id="@+id/btnToast"

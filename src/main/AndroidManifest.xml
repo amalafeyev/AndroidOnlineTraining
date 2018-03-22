@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelloRelative" />
-        <activity android:name=".HelloToastClassActivity"></activity>
+        <activity android:name=".HelloRelativeActivity" />
+        <activity android:name=".HelloToastActivity" />
     </application>
 
 </manifest>
