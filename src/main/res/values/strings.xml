@@ -3,4 +3,8 @@
     <string name="greeting_main_page">0</string>
     <string name="toastMessage">Toast HeHe :)</string>
     <string name="show_initial_value">0</string>
+    <string name="button_label_count">Count</string>
+    <string name="button_label_hello_toast">Class1. Hello Toast</string>
+    <string name="button_label_hello_relative">Class2. Hello Relative</string>
+    <string name="button_label_toast">Toast</string>
 </resources>
