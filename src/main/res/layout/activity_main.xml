@@ -25,4 +25,13 @@
         android:text="@string/button_label_hello_relative"
         android:textColor="@color/colorWhite" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@color/colorPrimary"
+        android:onClick="startHelloConstraintActivity"
+        android:text="@string/button_label_hello_constraint"
+        android:textColor="@color/colorWhite" />
+
 </LinearLayout>

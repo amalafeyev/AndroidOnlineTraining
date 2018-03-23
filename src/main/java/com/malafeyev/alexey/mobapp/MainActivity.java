@@ -30,4 +30,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intentHelloRelative = new Intent(getApplicationContext(), HelloRelativeActivity.class);
         startActivity(intentHelloRelative);
     }
+
+    public void startHelloConstraintActivity(View view) {
+        Intent intentHelloConstraint = new Intent(getApplicationContext(), HelloConstraintActivity.class);
+        startActivity(intentHelloConstraint);
+    }
 }

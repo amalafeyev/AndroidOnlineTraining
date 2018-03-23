@@ -7,4 +7,5 @@
     <string name="button_label_hello_toast">Class1. Hello Toast</string>
     <string name="button_label_hello_relative">Class2. Hello Relative</string>
     <string name="button_label_toast">Toast</string>
+    <string name="button_label_hello_constraint">Class3. Hello Constraint</string>
 </resources>
