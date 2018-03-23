@@ -31,16 +31,23 @@ public class HelloRelativeActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-            ((View)txvToastRltv.getParent())
-                    .setBackgroundDrawable( getResources()
-                            .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941) );
-        } else {
-            ((View)txvToastRltv.getParent())
-                    .setBackground( getResources()
-                            .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941));
+        if(view.getId() == btnCountRltv.getId()){
+            if(txvToastRltv != null) {
+                txvToastRltv.setText(String.valueOf(++counter));
+            }
         }
-        toogler = !toogler;
+        else if(view.getId() == btnToastRltv.getId() || view.getId() == txvToastRltv.getId()) {
+            if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                ((View) txvToastRltv.getParent())
+                        .setBackgroundDrawable(getResources()
+                                .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941));
+            } else {
+                ((View) txvToastRltv.getParent())
+                        .setBackground(getResources()
+                                .getDrawable(toogler ? R.drawable.mvimg_20180310_170434 : R.drawable.mvimg_20180311_154941));
+            }
+            toogler = !toogler;
+        }
 
         Toast.makeText(this, "Punch!!!", Toast.LENGTH_SHORT).show();
     }
