@@ -10,7 +10,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
+        android:layout_margin="@dimen/margin_regular"
         android:background="@color/colorPrimary"
         android:onClick="startHelloToastActivity"
         android:text="@string/button_label_hello_toast"
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
+        android:layout_margin="@dimen/margin_regular"
         android:background="@color/colorPrimary"
         android:onClick="startHelloRelativeActivity"
         android:text="@string/button_label_hello_relative"
@@ -28,10 +28,19 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
+        android:layout_margin="@dimen/margin_regular"
         android:background="@color/colorPrimary"
         android:onClick="startHelloConstraintActivity"
         android:text="@string/button_label_hello_constraint"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:onClick="startScrollingTextActivity"
+        android:text="@string/button_label_scrolling_text"
         android:textColor="@color/colorWhite" />
 
 </LinearLayout>
