@@ -8,4 +8,279 @@
     <string name="button_label_hello_relative">Class2. Hello Relative</string>
     <string name="button_label_toast">Toast</string>
     <string name="button_label_hello_constraint">Class3. Hello Constraint</string>
+    <string name="text_view_title_text">Working with TextView Elements</string>
+    <string name="text_view_subtitle_text">Add the text of the article</string>
+    <string name="text_view_detail_text">
+        From www.google.com
+        In a <b>real app</b> that accesses magazine or newspaper articles,
+        \n\n
+        the articles that appear would probably come from
+        \n\n
+        an online source through a content provider, or might be saved in advance in a database on the device.
+
+For this practical, you will create the article as a single long string in the strings.xml resource.
+        \n\n\n
+In the app > res > values folder, open strings.xml.
+        \n\n
+Enter the values for the strings article_title and article_subtitle with a made-up title and a subtitle
+        \n\n
+        for the article you are adding. The string values for each should be single-line text without HTML
+        \n tags or multiple lines.
+Enter or copy and paste text for the article_text string.
+Use the text provided for the article_text string in the strings.xml file of the finished ScrollingText app,
+        \n or use your own generic text. You can copy and then paste the same sentence over and over, as long
+        \n as the result is a long section of text that will not fit entirely on the screen. Keep in mind the
+        \n following (refer to the figure below for an example):
+As you enter or paste text in the strings.xml file, the text lines don't wrap around to the next line—they
+        \n extend beyond the right margin. This is the correct behavior—each new line of text starting at the
+        \n left margin represents an entire paragraph.
+Enter \n to represent the end of a line, and another \n to represent a blank line.
+Why? You need to add end-of-line characters to keep paragraphs from running into each other.
+Tip: If you want to see the text wrapped in strings.xml, you can press Return to enter hard line endings, or
+        \n format the text first in a text editor with hard line endings.
+If you have an apostrophe (') in your text, you must escape it by preceding it with a backslash (\'). If you have
+        \n a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII
+        \n characters.See the "Formatting and Styling" section of String Resources for more details.
+Enter the HTML and /b tags around words that should be in bold.
+    Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+    </string>
+    <string name="button_label_scrolling_text">Class4. Scrolling TextView</string>
+    <string name="title_activity_basic">First Label Activity</string>
+    <string name="title_activity_basic_receiver">Second Label Activity</string>
+    <string name="text_view_receive_label">Message Received</string>
+    <string name="button_main">Send Message</string>
+    <string name="text_header">Message Received</string>
+    <string name="button_second">Reply</string>
+    <string name="editText_second">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
+    <string name="article_one">
+        From www.google.com
+        In a <b>real app</b> that accesses magazine or newspaper articles,
+        \n\n
+        the articles that appear would probably come from
+        \n\n
+        an online source through a content provider, or might be saved in advance in a database on the device.
+
+For this practical, you will create the article as a single long string in the strings.xml resource.
+        \n\n\n
+In the app > res > values folder, open strings.xml.
+        \n\n
+Enter the values for the strings article_title and article_subtitle with a made-up title and a subtitle
+        \n\n
+        for the article you are adding. The string values for each should be single-line text without HTML
+        \n tags or multiple lines.
+Enter or copy and paste text for the article_text string.
+Use the text provided for the article_text string in the strings.xml file of the finished ScrollingText app,
+        \n or use your own generic text. You can copy and then paste the same sentence over and over, as long
+        \n as the result is a long section of text that will not fit entirely on the screen. Keep in mind the
+        \n following (refer to the figure below for an example):
+As you enter or paste text in the strings.xml file, the text lines don't wrap around to the next line—they
+        \n extend beyond the right margin. This is the correct behavior—each new line of text starting at the
+        \n left margin represents an entire paragraph.
+Enter \n to represent the end of a line, and another \n to represent a blank line.
+Why? You need to add end-of-line characters to keep paragraphs from running into each other.
+Tip: If you want to see the text wrapped in strings.xml, you can press Return to enter hard line endings, or
+        \n format the text first in a text editor with hard line endings.
+If you have an apostrophe (') in your text, you must escape it by preceding it with a backslash (\'). If you have
+        \n a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII
+        \n characters.See the "Formatting and Styling" section of String Resources for more details.
+Enter the HTML and /b tags around words that should be in bold.
+    Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.</string>
+    <string name="article_two">
+        From www.google.com
+        In a <b>real app</b> that accesses magazine or newspaper articles,
+        \n\n
+        the articles that appear would probably come from
+        \n\n
+        an online source through a content provider, or might be saved in advance in a database on the device.
+
+For this practical, you will create the article as a single long string in the strings.xml resource.
+        \n\n\n
+In the app > res > values folder, open strings.xml.
+        \n\n
+Enter the values for the strings article_title and article_subtitle with a made-up title and a subtitle
+        \n\n
+        for the article you are adding. The string values for each should be single-line text without HTML
+        \n tags or multiple lines.
+Enter or copy and paste text for the article_text string.
+Use the text provided for the article_text string in the strings.xml file of the finished ScrollingText app,
+        \n or use your own generic text. You can copy and then paste the same sentence over and over, as long
+        \n as the result is a long section of text that will not fit entirely on the screen. Keep in mind the
+        \n following (refer to the figure below for an example):
+As you enter or paste text in the strings.xml file, the text lines don't wrap around to the next line—they
+        \n extend beyond the right margin. This is the correct behavior—each new line of text starting at the
+        \n left margin represents an entire paragraph.
+Enter \n to represent the end of a line, and another \n to represent a blank line.
+Why? You need to add end-of-line characters to keep paragraphs from running into each other.
+Tip: If you want to see the text wrapped in strings.xml, you can press Return to enter hard line endings, or
+        \n format the text first in a text editor with hard line endings.
+If you have an apostrophe (') in your text, you must escape it by preceding it with a backslash (\'). If you have
+        \n a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII
+        \n characters.See the "Formatting and Styling" section of String Resources for more details.
+Enter the HTML and /b tags around words that should be in bold.
+    Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.</string>
+    <string name="article_three">
+        From www.google.com
+        In a <b>real app</b> that accesses magazine or newspaper articles,
+        \n\n
+        the articles that appear would probably come from
+        \n\n
+        an online source through a content provider, or might be saved in advance in a database on the device.
+
+For this practical, you will create the article as a single long string in the strings.xml resource.
+        \n\n\n
+In the app > res > values folder, open strings.xml.
+        \n\n
+Enter the values for the strings article_title and article_subtitle with a made-up title and a subtitle
+        \n\n
+        for the article you are adding. The string values for each should be single-line text without HTML
+        \n tags or multiple lines.
+Enter or copy and paste text for the article_text string.
+Use the text provided for the article_text string in the strings.xml file of the finished ScrollingText app,
+        \n or use your own generic text. You can copy and then paste the same sentence over and over, as long
+        \n as the result is a long section of text that will not fit entirely on the screen. Keep in mind the
+        \n following (refer to the figure below for an example):
+As you enter or paste text in the strings.xml file, the text lines don't wrap around to the next line—they
+        \n extend beyond the right margin. This is the correct behavior—each new line of text starting at the
+        \n left margin represents an entire paragraph.
+Enter \n to represent the end of a line, and another \n to represent a blank line.
+Why? You need to add end-of-line characters to keep paragraphs from running into each other.
+Tip: If you want to see the text wrapped in strings.xml, you can press Return to enter hard line endings, or
+        \n format the text first in a text editor with hard line endings.
+If you have an apostrophe (') in your text, you must escape it by preceding it with a backslash (\'). If you have
+        \n a double-quote in your text, you must also escape it (\"). You must also escape any other non-ASCII
+        \n characters.See the "Formatting and Styling" section of String Resources for more details.
+Enter the HTML and /b tags around words that should be in bold.
+    Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.
+        Enter the HTML and /i tags around words that should be in italics. Note, however, that if you use curled
+        \n apostrophes within an italic phrase, you should replace them with straight apostrophes.
+    You can combine bold and italics by combining the tags, as in ... words.../i/b. Other HTML tags are ignored.
+    Enclose The entire text within \\string name="article_text"> \\string> in the strings.xml file.
+    Include a web link to test, such as www.google.com (the example below uses www.rockument.com). Don't use an
+        \n HTML tag—any HTML tags except the bold and italic tags will be ignored and presented as text, which is
+        \n not what you want. The Article Text with HTML Tags
+    Run the app.
+    The article appears, and you can even scroll it, but the scrolling is not smooth and there is no scroll bar
+        \n because you haven't yet included a ScrollView (which you will do in the next task). Note also that
+        \n tapping a web link does not currently do anything. You will also fix that in the next task.</string>
+    <string name="show_article_1">Show article 1</string>
+    <string name="show_article_2">Show article 2</string>
+    <string name="show_article_3">Show article 3</string>
 </resources>

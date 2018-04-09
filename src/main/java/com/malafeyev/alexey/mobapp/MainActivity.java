@@ -35,4 +35,14 @@ public class MainActivity extends AppCompatActivity{
         Intent intentHelloConstraint = new Intent(getApplicationContext(), HelloConstraintActivity.class);
         startActivity(intentHelloConstraint);
     }
+
+    public void startScrollingTextActivity(View view) {
+        Intent intentScrollingText = new Intent(getApplicationContext(), ScrollingTextActivity.class);
+        startActivity(intentScrollingText);
+    }
+
+    public void startBasicActivity(View view) {
+        Intent intentBasicActivity = new Intent(getApplicationContext(), BasicActivity.class);
+        startActivity(intentBasicActivity);
+    }
 }

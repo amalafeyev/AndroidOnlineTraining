@@ -2,4 +2,10 @@
 <resources>
     <dimen name="show_text_size">160sp</dimen>
     <dimen name="activity_margin">16dp</dimen>
+    <dimen name="padding_regular">10dp</dimen>
+    <dimen name="line_spacing">5sp</dimen>
+    <dimen name="margin_regular">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">1dp</dimen>
+    <dimen name="activity_horizontal_margin">1dp</dimen>
 </resources>
