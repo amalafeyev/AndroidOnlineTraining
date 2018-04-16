@@ -67,4 +67,12 @@
         android:onClick="launchSecondActivity"
         android:text="@string/show_article_3" />
 
+    <Button
+        android:id="@+id/button_open_groceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_main_three"
+        android:onClick="launchGroceriesActivity"
+        android:text="@string/button_label_shopping_list" />
+
 </RelativeLayout>

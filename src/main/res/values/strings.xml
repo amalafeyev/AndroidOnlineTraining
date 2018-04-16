@@ -283,4 +283,7 @@ Enter the HTML and /b tags around words that should be in bold.
     <string name="show_article_1">Show article 1</string>
     <string name="show_article_2">Show article 2</string>
     <string name="show_article_3">Show article 3</string>
+    <string name="title_activity_shopping_list">ShoppingListActivity</string>
+    <string name="button_label_shopping_list">Shopping List</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
