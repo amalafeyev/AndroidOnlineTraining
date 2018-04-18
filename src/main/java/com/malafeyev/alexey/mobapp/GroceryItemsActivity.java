@@ -1,21 +1,27 @@
 package com.malafeyev.alexey.mobapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class GroceryItemsActivity extends AppCompatActivity {
 
     private int shopping_list_index = 0;
     public static final int REQUEST_GROCERY_ITEM = 1;
+    private EditText mEditTextStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grocery_items);
+
+        mEditTextStore = (EditText) findViewById(R.id.grocery_store_edit_text);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -72,6 +78,17 @@ public class GroceryItemsActivity extends AppCompatActivity {
                 return findViewById(R.id.text_view_10);
         }
         return null;
+    }
+
+    public void locateStore(View view) {
+        String loc = mEditTextStore.getText().toString();
+        Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!");
+        }
     }
 }
 

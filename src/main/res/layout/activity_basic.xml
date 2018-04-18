@@ -75,4 +75,15 @@
         android:onClick="launchGroceriesActivity"
         android:text="@string/button_label_shopping_list" />
 
+    <Button
+        android:id="@+id/button_open_intents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_open_groceries"
+        android:background="@color/colorPrimary"
+        android:onClick="launchImplicitIntentsPracticeActivity"
+        android:padding="@dimen/padding_regular"
+        android:text="Implicit Intents"
+        android:textColor="@color/colorWhite" />
+
 </RelativeLayout>

@@ -128,4 +128,9 @@ public class BasicActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GroceryItemsActivity.class);
         startActivity(intent);
     }
+
+    public void launchImplicitIntentsPracticeActivity(View view) {
+        Intent intent = new Intent(this, ImplicitIntentsPracticeActivity.class);
+        startActivity(intent);
+    }
 }

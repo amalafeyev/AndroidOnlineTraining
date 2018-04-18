@@ -7,6 +7,37 @@
     android:orientation="vertical"
     tools:context=".GroceryItemsActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular">
+
+        <EditText
+            android:id="@+id/grocery_store_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/button_find_store"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button_find_store"
+            android:layout_toStartOf="@id/button_find_store"
+            android:hint="Enter Grocery Store Name" />
+
+        <Button
+            android:id="@+id/button_find_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_regular"
+            android:background="@color/colorPrimary"
+            android:onClick="locateStore"
+            android:padding="@dimen/padding_regular"
+            android:text="@string/get_directions"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -20,81 +51,90 @@
         android:id="@+id/text_view_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
+
     <TextView
         android:id="@+id/text_view_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_regular"
         android:textAppearance="@color/colorPrimary"
-        android:textStyle="bold|italic"
         android:textSize="30sp"
-        android:layout_marginVertical="@dimen/margin_regular"/>
+        android:textStyle="bold|italic" />
 
 </LinearLayout>
