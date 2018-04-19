@@ -45,4 +45,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intentBasicActivity = new Intent(getApplicationContext(), BasicActivity.class);
         startActivity(intentBasicActivity);
     }
+
+    public void startCalculatorActivity(View view) {
+        Intent intentCalculatorActivity = new Intent(getApplicationContext(), CalculatorActivity.class);
+        startActivity(intentCalculatorActivity);
+    }
 }
