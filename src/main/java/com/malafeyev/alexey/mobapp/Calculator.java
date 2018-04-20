@@ -41,6 +41,9 @@ public class Calculator {
      * Divide operation
      */
     public double div(double firstOperand, double secondOperand) {
+        if(secondOperand == 0){
+            return 0;
+        }
         return firstOperand / secondOperand;
     }
 
