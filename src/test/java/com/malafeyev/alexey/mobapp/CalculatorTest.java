@@ -17,6 +17,7 @@ package com.malafeyev.alexey.mobapp;
  * limitations under the License.
  */
 
+import android.app.Activity;
 import android.test.suitebuilder.annotation.SmallTest;
 
 import org.hamcrest.CoreMatchers;
@@ -24,6 +25,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import static org.mockito.Mockito.*;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
@@ -38,6 +41,7 @@ import static org.junit.Assert.assertThat;
 public class CalculatorTest {
 
     private Calculator mCalculator;
+    private Activity aCalculator;
 
     /**
      * Set up the environment for testing
@@ -45,6 +49,16 @@ public class CalculatorTest {
     @Before
     public void setUp() {
         mCalculator = new Calculator();
+        aCalculator = mock(CalculatorActivity.class);
+    }
+
+    @Test
+    public void clickButton() {
+        // 2. tell the mock how to behave
+        when(aCalculator.getActionBar()).thenReturn(null);
+
+        // 3. use the mock
+        assertThat(null, is(equalTo(aCalculator.getActionBar())));
     }
 
     /**
@@ -105,10 +119,12 @@ public class CalculatorTest {
         assertThat(resultAdd, is(equalTo(Double.NEGATIVE_INFINITY)));
     }
 
-    @Test
-    public void divByZeroReturnsZero() {
-        double resultAdd = mCalculator.div(-2d, 0d);
-        assertThat(resultAdd, is(equalTo(0d)));
+    /**
+     * Test for divide by zero; must throw IllegalArgumentException
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void divDivideByZeroThrows() {
+        mCalculator.div(32d,0d);
     }
 
 
