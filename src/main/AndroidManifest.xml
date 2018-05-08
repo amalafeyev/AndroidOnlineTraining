@@ -69,7 +69,8 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculatorActivity"></activity>
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".SupportLibraryActivity"></activity>
     </application>
 
 </manifest>

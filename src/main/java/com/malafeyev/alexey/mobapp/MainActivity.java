@@ -50,4 +50,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intentCalculatorActivity = new Intent(getApplicationContext(), CalculatorActivity.class);
         startActivity(intentCalculatorActivity);
     }
+
+    public void startSupportLibraryActivity(View view) {
+        Intent intentSupportLibraryActivity = new Intent(getApplicationContext(), SupportLibraryActivity.class);
+        startActivity(intentSupportLibraryActivity);
+    }
 }

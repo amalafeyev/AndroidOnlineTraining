@@ -42,7 +42,7 @@ public class Calculator {
      */
     public double div(double firstOperand, double secondOperand) {
         if(secondOperand == 0){
-            return 0;
+            throw new IllegalArgumentException();
         }
         return firstOperand / secondOperand;
     }

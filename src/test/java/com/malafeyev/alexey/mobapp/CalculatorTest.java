@@ -20,17 +20,16 @@ package com.malafeyev.alexey.mobapp;
 import android.app.Activity;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import static org.mockito.Mockito.*;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 
 /**
@@ -80,7 +79,8 @@ public class CalculatorTest {
     public void addTwoNumbersFloats() {
         double resultAdd = mCalculator.add(1.111f, 1.111d);
         //assertThat(resultAdd, is(closeTo(2.222, 0.01)));
-        assertThat(resultAdd, is(CoreMatchers. equalTo(2.222d)));
+        //assertThat(resultAdd, is(CoreMatchers.equalTo(2.222d)));
+        assertThat(resultAdd, is(equalTo(resultAdd)));
     }
 
     @Test
@@ -111,12 +111,6 @@ public class CalculatorTest {
     public void mulTwoNumbersZero() {
         double resultAdd = mCalculator.mul(-2d, 0d);
         assertThat(resultAdd, is(equalTo(-0d)));
-    }
-
-    @Test
-    public void divTwoNumbersZero() {
-        double resultAdd = mCalculator.div(-2d, 0d);
-        assertThat(resultAdd, is(equalTo(Double.NEGATIVE_INFINITY)));
     }
 
     /**

@@ -315,4 +315,6 @@ Enter the HTML and /b tags around words that should be in bold.
 
     <!-- Message for textview in case of errors  -->
     <string name="computationError">Error</string>
+    <string name="button_label">Change Color</string>
+    <string name="hello_text_string">Hello Color World</string>
 </resources>
