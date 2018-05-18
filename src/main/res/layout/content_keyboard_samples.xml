@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".KeyboardSamplesActivity"
+    android:layout_margin="@dimen/margin_regular">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Enter phone number" />
+
+        <Spinner
+            android:id="@+id/label_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <Button
+            android:id="@+id/button_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showText"
+            android:text="Show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_one"
+        >
+
+        <TextView
+            android:id="@+id/title_phonelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number."
+            />
+
+        <TextView
+            android:id="@+id/text_phonelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing Entered."
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tap_test"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_alignBaseline="@+id/button1"
+        android:text="@string/tap_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@+id/linear_two"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert"
+        android:onClick="onClickShowAlert"/>
+
+    <Button
+        android:id="@+id/button_date_picker"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Pickers"
+        android:onClick="onClickShowDateTimePickersActivity"/>
+    <Button
+        android:id="@+id/button_images"
+        android:layout_below="@+id/button_date_picker"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Images"
+        android:onClick="onClickShowImagesActivity"/>
+
+    <EditText
+        android:id="@+id/edit_text_keyboard_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:hint="Enter a password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="showToastedMessage"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/edit_text_keyboard_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/button_two"
+        android:layout_toLeftOf="@+id/button_two"
+        android:hint="Enter an email"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/button_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="showToastedMessage"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/edit_text_keyboard_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/button_three"
+        android:layout_toLeftOf="@+id/button_three"
+        android:hint="Enter a phone"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:id="@+id/button_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_two"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="showToastedMessage"
+        android:text="Phone" />
+
+    <EditText
+        android:id="@+id/edit_text_keyboard_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/button_four"
+        android:layout_toLeftOf="@+id/button_four"
+        android:hint="Enter capitalized text"
+        android:inputType="textCapSentences"
+        />
+
+    <Button
+        android:id="@+id/button_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/button_three"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="showToastedMessage"
+        android:text="CapSen" />
+    <EditText
+        android:id="@+id/edit_text_keyboard_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_images"
+        android:hint="Enter number to phone somebody"
+        android:inputType="phone"
+        android:imeOptions="actionSend"
+        />
+
+</RelativeLayout>

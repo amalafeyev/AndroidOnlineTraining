@@ -317,4 +317,43 @@ Enter the HTML and /b tags around words that should be in bold.
     <string name="computationError">Error</string>
     <string name="button_label">Change Color</string>
     <string name="hello_text_string">Hello Color World</string>
+    <string name="title_activity_keyboard_samples">KeyboardSamplesActivity</string>
+    <string name="tap_test">Tap to test the alert</string>
+    <string name="alert_title">Alert</string>
+    <string name="alert_message">Click OK to continue, or Cancel to stop:</string>
+    <string name="ok">OK</string>
+    <string name="pressed_ok">Pressed OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="pressed_cancel">Pressed Cancel</string>
+    <string name="choose_datetime">Choose the date and time:</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
+    <string-array name="labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image_click">ImageClickActivity</string>
+    <string name="intro_text">Droid Desserts</string>
+    <string name="choose_a_desert">Choose a desert</string>
+    <string name="donut">Donuts are glazed and sprinkled with candy.</string>
+    <string name="ice_cream_sandwich">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="choose_delivery_method">Choose a delivery method:</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="chosen">"Chosen: "</string>
+    <string name="nothing_clicked">onRadioButtonClicked: Nothing clicked.</string>
 </resources>

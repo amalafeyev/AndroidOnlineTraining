@@ -70,7 +70,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalculatorActivity" />
-        <activity android:name=".SupportLibraryActivity"></activity>
+        <activity android:name=".SupportLibraryActivity" />
+        <activity
+            android:name=".KeyboardSamplesActivity"
+            android:label="@string/title_activity_keyboard_samples"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DateTimePickersActivity" />
+        <activity
+            android:name=".ImageClickActivity"
+            android:label="@string/title_activity_image_click"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OrderActivity"></activity>
     </application>
 
 </manifest>

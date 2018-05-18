@@ -70,4 +70,13 @@
         android:text="Class3.3.SupportLibraries"
         android:textColor="@color/colorWhite" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/colorPrimary"
+        android:onClick="startKeyboardSamplesActivity"
+        android:text="Class4.1.KeyboardSamples"
+        android:textColor="@color/colorWhite" />
+
 </LinearLayout>

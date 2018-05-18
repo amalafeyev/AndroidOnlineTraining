@@ -55,4 +55,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intentSupportLibraryActivity = new Intent(getApplicationContext(), SupportLibraryActivity.class);
         startActivity(intentSupportLibraryActivity);
     }
+
+    public void startKeyboardSamplesActivity(View view) {
+        Intent intentKeyboardSamplesActivity = new Intent(getApplicationContext(), KeyboardSamplesActivity.class);
+        startActivity(intentKeyboardSamplesActivity);
+    }
 }
